@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, 'PingFang SC', sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: #09090b !important;
+  color: #f4f4f5 !important;
+  font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+/* Premium Dark scrollbar designs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Premium Markdown styling for AI chat responses */
+.markdown-body {
+  font-size: 12px;
+  line-height: 1.62;
+  color: #e4e4e7;
+}
+.markdown-body th, .markdown-body td {
+  border: 1px solid #3f3f46;
+  padding: 8px 12px;
+}
+.markdown-body th {
+  background-color: #18181b;
+  font-weight: 700;
+  color: #ffffff;
+}
+.markdown-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+  display: block;
+  overflow-x: auto;
+  border-radius: 8px;
+  background-color: #0c0c0e;
+}
+.markdown-body ul {
+  list-style-type: disc !important;
+  margin-left: 18px !important;
+  margin-bottom: 12px !important;
+  padding-left: 4px !important;
+}
+.markdown-body ol {
+  list-style-type: decimal !important;
+  margin-left: 18px !important;
+  margin-bottom: 12px !important;
+  padding-left: 4px !important;
+}
+.markdown-body li {
+  margin-bottom: 6px;
+}
+.markdown-body blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 12px;
+  color: #a1a1aa;
+  margin: 10px 0;
+  font-style: italic;
+  background-color: #181125/40;
+}
+.markdown-body p {
+  margin-bottom: 12px;
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  font-weight: 800;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+.markdown-body h1 { font-size: 16px; }
+.markdown-body h2 { font-size: 15px; border-bottom: 1px solid #27272a; padding-bottom: 4px; }
+.markdown-body h3 { font-size: 14px; }
+.markdown-body h4 { font-size: 12.5px; }
+.markdown-body strong {
+  font-weight: 850;
+  color: #ffffff;
+}
+
+@keyframes spin-hover {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-spin-hover:hover {
+  animation: spin-hover 2s linear infinite;
+}

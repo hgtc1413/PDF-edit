@@ -1,0 +1,6 @@
+{
+  "name": "AI PDF 编辑器",
+  "description": "基于 Gemini AI 赋能的现代 PDF 编辑平台。提供高效本地文档解析、高质量渲染、流畅标注体验与智能工作流增强。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
